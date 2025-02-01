@@ -6,6 +6,16 @@
     font-size: 12px;
 }
 
+.fnq{
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+.fnn{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
 .color{
     color: black;
 }
@@ -21,6 +31,20 @@ body{
     flex-direction: row;
 }
 
+.containerr{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dropdown{
+    font-family: 'Montserrat';
+}
+
+:hover .dropdown{
+    font-family: 'Montserrat';
+}
 .nav-link{
     color: black;
 }
@@ -32,9 +56,106 @@ body{
 .fnz {
     margin-top: 390px;
     margin-left: 115px;
+    border-color: black;
+    background-color: black;
+}
+
+.fnzz {
+    border-color: black;
+    background-color: black;
+}
+
+:hover .fnzz{
+    border-color: black;
     background-color: black;
 }
 
 :hover .fnz{
+    border-color: black;
     background-color: black;
+}
+
+.q{
+    padding-bottom: 50px;
+    margin-top: -380px;
+}
+
+h5{
+    font-family: 'Montserrat';
+    font-size: 64px;
+    color: black;
+    margin-bottom: 50px;
+    text-align: right;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: black;
+    margin-left: 200px;
+    text-align: start;
+}
+
+.btn-sm{
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+
+.dropdown-items {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: black;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+:hover .dropdown-items {
+    color: black;
+} 
+
+.carousel-indicators .active {
+    color: black;
+    background-color: black;
+}
+
+.qwe55{
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-size: 64px;
+    color: black;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.qwr{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: start;
+}
+
+.qwe56{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
 }
