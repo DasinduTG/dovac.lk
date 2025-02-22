@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOVAC</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 1.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="js/node.js"></script>
+</head>
+
+<body>
+    <header class="container py-3">
+        <a href="index.html" style="z-index: 2;">
+            <img src="images/Group 1.png" class="img-fluid" alt="Logo" style="margin-left: -80px;">
+        </a>
+    </header>
+    <nav class="fn navbar navbar-expand-lg navbar" style="margin-top: -146px;margin-right: 180px;z-index: 2;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">NEWS</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="daily.html" style="font-weight: bolder;">DAILY</a></li>
+                              <li><a class="dropdown-items" href="weekly.html" style="font-weight: bolder;">WEEKLY</a></li>
+                              <li><a class="dropdown-items" href="monthly.html" style="font-weight: bolder;">MONTHLY</a></li>
+                              <li><a class="dropdown-items" href="quaterly.html" style="font-weight: bolder;">QUARTERLY</a></li>
+                              <li><a class="dropdown-items" href="yearly.html" style="font-weight: bolder;">YEARLY</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">ISSUES</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                                <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE CHANGE</a></li>
+                                <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER POLICY</a></li>
+                                <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND FRAGMENTATION</a></li>
+                                <li><a class="dropdown-items" href="low.html" style="font-weight: bolder;">LOW MECHANIZATION</a></li>
+                                <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET ACCESS</a></li>
+                                <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER MANAGEMENT</a></li>
+                                <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY INSTABILITY</a></li>
+                                <li><a class="dropdown-items" href="lack.html" style="font-weight: bolder;">LACK OF RESEARCH AND DEVELOPMENT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">SOLUTIONS</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="investment.html" style="font-weight: bolder;">INVESTMENT IN RESEARCH AND DEVELOPMENT</a></li>
+                              <li><a class="dropdown-items" href="improved.html" style="font-weight: bolder;">IMPROVED IRRIGATION SYSTEMS</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND CONSOLIDATION</a></li>
+                              <li><a class="dropdown-items" href="farmer.html" style="font-weight: bolder;">FARMER TRAINING AND EXTENSION SERVICES</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET SUPPORT MECHANISMS</a></li>
+                              <li><a class="dropdown-items" href="sustainable.html" style="font-weight: bolder;">SUSTAINABLE FERTILIZER MANAGEMENT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">VOTE</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND</a></li>
+                              <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET</a></li>
+                              <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER</a></li>
+                              <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="bg-transparent d-flex">
+                        <div class="position-relative">
+                            <input type="text"
+                                   class=" bg-white form-control rounded-pill search-bar pe-5"
+                                   placeholder="Search..."
+                                   aria-label="Search" style="border: unset;color: rgb(0, 0, 0);">
+                            <button class="bg-transparent btn position-absolute top-50 end-0 translate-middle-y" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: rgb(0, 0, 0);">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="images/Daily.jpeg" alt="" style="width: 1520px;z-index: 1;margin-top: -56px;">
+    <h5 style="color: black;font-size: 18px;margin-top: 50px;margin-left: 10px;">DAILY NEWS</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card1.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">CLIMATE CHANGE</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card2.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">WATER MANAGEMENT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card3.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">MARKET ACCESS</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card4.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">FERTILIZER POLICY</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 style="color: black;font-size: 18px;margin-top: 50px;margin-left: 10px;">LOREM IPSUM DOLOR SIT AMET</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card1.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">CLIMATE CHANGE</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card2.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">WATER MANAGEMENT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card3.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">MARKET ACCESS</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card4.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">FERTILIZER POLICY</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 style="color: black;font-size: 18px;margin-top: 50px;margin-left: 10px;">LOREM IPSUM DOLOR SIT AMET</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card1.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">CLIMATE CHANGE</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card2.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">WATER MANAGEMENT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card3.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">MARKET ACCESS</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card4.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">FERTILIZER POLICY</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 style="color: black;font-size: 18px;margin-top: 50px;margin-left: 10px;">LOREM IPSUM DOLOR SIT AMET</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card1.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">CLIMATE CHANGE</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card2.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">WATER MANAGEMENT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card3.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">MARKET ACCESS</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card4.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">FERTILIZER POLICY</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+   <br>
+   <h5 style="margin-left: 10px; color: black; font-size: 12px;margin-bottom: 0px;text-align: center;">@ DOVAC.INC</h5>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOVAC</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 1.png">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome Cdn -->
@@ -12,17 +13,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/face-api.min.js"></script>
+
     <script defer src="js/node.js"></script>
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
 </head>
 
 <body>
-    <header class="container justify-content-center py-3">
-        <a href="#">
-            <img src="images/logo.png" class="img-fluid" alt="Logo">
+    <header class="container py-3">
+        <a href="index.html" style="z-index: 2;">
+            <img src="images/Group 1.png" class="img-fluid" alt="Logo" style="margin-left: -80px;z-index: 2;">
         </a>
     </header>
-    <nav class="fn navbar navbar-expand-lg navbar">
+    <nav class="fn navbar navbar-expand-lg navbar" style="margin-top: -146px;margin-right: 180px;z-index: 2;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,143 +39,208 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <a class="btn btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">CANDIDATES</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="dropdown-items" href="john.html">JOHN ADAMS</a></li>
-                              <li><a class="dropdown-items" href="ben.html">BEN CHAMPS</a></li>
-                              <li><a class="dropdown-items" href="jasmine.html">JASMINE RODRIGO</a></li>
-                              <li><a class="dropdown-items" href="mosiac.html">MOSIAC CAPRIO</a></li>
-                              <li><a class="dropdown-items" href="ella.html">ELLA ROSE</a></li>
-                              <li><a class="dropdown-items" href="ava.html">AVA GRACE</a></li>
-                              <li><a class="dropdown-items" href="avery.html">AVERY JAMES</a></li>
-                              <li><a class="dropdown-items" href="alfie.html">ALFIE JAY</a></li>
-                              <li><a class="dropdown-items" href="billie.html">BILLIE JOE</a></li>
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">NEWS</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="daily.html" style="font-weight: bolder;">DAILY</a></li>
+                              <li><a class="dropdown-items" href="weekly.html" style="font-weight: bolder;">WEEKLY</a></li>
+                              <li><a class="dropdown-items" href="monthly.html" style="font-weight: bolder;">MONTHLY</a></li>
+                              <li><a class="dropdown-items" href="quaterly.html" style="font-weight: bolder;">QUARTERLY</a></li>
+                              <li><a class="dropdown-items" href="yearly.html" style="font-weight: bolder;">YEARLY</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ELECTION DAY</a>
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">ISSUES</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                                <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE CHANGE</a></li>
+                                <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER POLICY</a></li>
+                                <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND FRAGMENTATION</a></li>
+                                <li><a class="dropdown-items" href="low.html" style="font-weight: bolder;">LOW MECHANIZATION</a></li>
+                                <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET ACCESS</a></li>
+                                <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER MANAGEMENT</a></li>
+                                <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY INSTABILITY</a></li>
+                                <li><a class="dropdown-items" href="lack.html" style="font-weight: bolder;">LACK OF RESEARCH AND DEVELOPMENT</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NEWS</a>
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">SOLUTIONS</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="investment.html" style="font-weight: bolder;">INVESTMENT IN RESEARCH AND DEVELOPMENT</a></li>
+                              <li><a class="dropdown-items" href="improved.html" style="font-weight: bolder;">IMPROVED IRRIGATION SYSTEMS</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND CONSOLIDATION</a></li>
+                              <li><a class="dropdown-items" href="farmer.html" style="font-weight: bolder;">FARMER TRAINING AND EXTENSION SERVICES</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET SUPPORT MECHANISMS</a></li>
+                              <li><a class="dropdown-items" href="sustainable.html" style="font-weight: bolder;">SUSTAINABLE FERTILIZER MANAGEMENT</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SEARCH</a>
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">VOTE</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND</a></li>
+                              <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET</a></li>
+                              <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER</a></li>
+                              <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY</a></li>
+                            </ul>
+                        </div>
                     </li>
+                    <div class="bg-transparent d-flex">
+                        <div class="position-relative">
+                            <input type="text"
+                                   class=" bg-white form-control rounded-pill search-bar pe-5"
+                                   placeholder="Search..."
+                                   aria-label="Search" style="border: unset;color: rgb(0, 0, 0);">
+                            <button class="bg-transparent btn position-absolute top-50 end-0 translate-middle-y" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: rgb(0, 0, 0);">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <img src="images/camera.jpg" class="rounded float-start" alt="camera">
-    <button class=" fnn fnz btn btn-primary">PLACE YOUR VOTE</button>
-    <img src="images/human.png" class="q rounded float-end" alt="human">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: -60px; z-index: 1;">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators" style="justify-content: flex-start;">
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="8"></button>
             </div>
-        
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 1">
+                    <img src="images/Slider1.jpeg" class="d-block" alt="Slide 1" style="width: 1520px; height: 720px;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>JOHN ADAMS</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="john.html" class="fn btn btn-dark">READ MORE</a>
+                        <h5>LOREM IPSUM DOLOR SIT AMET <br> MAGNA ALIQUA ADIPISCING ELIT</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 2">
+                    <img src="images/Slider2.jpeg" class="d-block" alt="Slide 2" style="width: 1520px; height: 720px;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>BEN CHAMPS</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="ben.html" class="fn btn btn-dark">READ MORE</a>
+                        <h5>LOREM IPSUM DOLOR SIT AMET <br> MAGNA ALIQUA ADIPISCING ELIT</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 3">
+                    <img src="images/Slider3.jpeg" class="d-block" alt="Slide 3" style="width: 1520px; height: 720px;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>JASMINE RODRIGO</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="jasmine.html" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 4">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>MOSIAC CAPRIO</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="mosiac.html" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 5">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>ELLA ROSE</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="ella.hrml" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 6">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>AVA GRACE</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="ava.html" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 7">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>AVERY JAMES</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="avery.html" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 8">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>ALFIE JAY</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="alfie.html" class="fn btn btn-dark">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/human_1.png" class="d-block" alt="Slide 9">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>BILLIE JOE</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a href="billie.html" class="fn btn btn-dark">READ MORE</a>
+                        <h5>LOREM IPSUM DOLOR SIT AMET <br>  MAGNA ALIQUA ADIPISCING ELIT</h5>
                     </div>
                 </div>
             </div>
-        
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
-    <div class="camera">
-        <video id="video" width="720" height="560" autoplay muted></video>
-    </div>
     <br>
     <br>
-    <div class="qwe56">
-        © 2025 DOVAC Inc.
+    <div class="card-group">
+        <div class="bg-transparent card" style="margin: 10px;border: none;z-index: 1;">
+          <img src="images/Card1.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title" style="color: black; font-size: 16px; text-align: center;">CLIMATE CHANGE</h5>
+            <p class="card-text" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">Read More</a></h5>
+          </div>
+        </div>
+        <div class="bg-transparent card" style="margin: 10px; border: none;z-index: 1;">
+          <img src="images/Card2.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title" style="color: black; font-size: 16px; text-align: center;">WATER MANAGEMENT</h5>
+            <p class="card-text" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">Read More</a></h5>
+          </div>
+        </div>
+        <div class="bg-transparent card" style="margin: 10px; border: none;z-index: 1;">
+          <img src="images/Card3.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title" style="color: black; font-size: 16px; text-align: center;">MARKET ACCESS</h5>
+            <p class="card-text" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">Read More</a></h5>
+          </div>
+        </div>
     </div>
+    <img src="images/bgtop.jpeg" alt="" style="opacity: 15%;width: 1520px;height: 616px;margin-top: -666px;">
+    <div class="containerr" style="margin-left: 100px;margin-top: 50px;">
+        <h5 style="color: rgb(226, 43, 43);z-index: 1;">LOREM IPSUM DOLOR SIT AMET</h5>
+    </div>
+    <div class="row">
+        <div class="offset-2 col-8 offeset-2" style="margin-left: 400px;margin-top: 20px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: -60px; z-index: 1;">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators" style="justify-content: flex-start;">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Chart1.jpeg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Chart2.jpeg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Chart3.jpeg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <br>
+    <h5 style="color: black;font-size: 18px;margin-top: 50px;margin-left: 10px;">LOREM IPSUM DOLOR SIT AMET</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card1.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">CLIMATE CHANGE</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card2.jpeg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">WATER MANAGEMENT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card3.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">MARKET ACCESS</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/Card4.jpeg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">FERTILIZER POLICY</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h5 style="color: black;text-align:right; font-size: 12px;"><a href="#" style="text-decoration: none;color: black;">VOTE</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+   <br>
+   <h5 style="margin-left: 10px; color: black; font-size: 12px;margin-bottom: 0px;text-align: center;">@ DOVAC.INC</h5>
 </body>
 </html>

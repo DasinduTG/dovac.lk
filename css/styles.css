@@ -35,7 +35,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .dropdown{
@@ -82,10 +82,10 @@ body{
 
 h5{
     font-family: 'Montserrat';
-    font-size: 64px;
-    color: black;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
     margin-bottom: 50px;
-    text-align: right;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -100,7 +100,14 @@ p{
 .btn-sm{
     margin-top: 4px;
     font-size: 12px;
+    color: white;
     font-weight: bold;
+}
+
+.btn-smm{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
 
 .btn:focus {
@@ -129,8 +136,8 @@ p{
 } 
 
 .carousel-indicators .active {
-    color: black;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .qwe55{
@@ -169,3 +176,33 @@ p{
     justify-content: center;
     align-items: center;
   }
+
+  .search-bar {
+    transition: width 0.3s ease-in-out;
+    width: 40px;
+}
+
+.search-bar:focus {
+    width: 250px;
+}
+
+.btn-custom {
+    background-color: #43a42f;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    text-align: left;
+    font-size: 18px;
+}
+:hover .btn-custom{
+    background-color: #43a42f;
+    color: rgb(0, 0, 0);
+}
+.display-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+body{
+    overflow-x: hidden;
+}
