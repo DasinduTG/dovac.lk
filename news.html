@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOVAC</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 1.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="js/node.js"></script>
+</head>
+
+<body>
+    <header class="container py-3">
+        <a href="index.html" style="z-index: 2;">
+            <img src="images/Group 1.png" class="img-fluid" alt="Logo" style="margin-left: -80px;">
+        </a>
+    </header>
+    <nav class="fn navbar navbar-expand-lg navbar" style="margin-top: -146px;margin-right: 180px;z-index: 2;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="background: black;margin-left: 900px;border-radius: 18px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="news.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">NEWS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">ISSUES</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                                <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE CHANGE</a></li>
+                                <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER POLICY</a></li>
+                                <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND FRAGMENTATION</a></li>
+                                <li><a class="dropdown-items" href="low.html" style="font-weight: bolder;">LOW MECHANIZATION</a></li>
+                                <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET ACCESS</a></li>
+                                <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER MANAGEMENT</a></li>
+                                <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY INSTABILITY</a></li>
+                                <li><a class="dropdown-items" href="lack.html" style="font-weight: bolder;">LACK OF RESEARCH AND DEVELOPMENT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">SOLUTIONS</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="investment.html" style="font-weight: bolder;">INVESTMENT IN RESEARCH AND DEVELOPMENT</a></li>
+                              <li><a class="dropdown-items" href="improved.html" style="font-weight: bolder;">IMPROVED IRRIGATION SYSTEMS</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND CONSOLIDATION</a></li>
+                              <li><a class="dropdown-items" href="farmer.html" style="font-weight: bolder;">FARMER TRAINING AND EXTENSION SERVICES</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET SUPPORT MECHANISMS</a></li>
+                              <li><a class="dropdown-items" href="sustainable.html" style="font-weight: bolder;">SUSTAINABLE FERTILIZER MANAGEMENT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 2px;">VOTE</a>
+                            <ul class="bg-transparent dropdown-menu" aria-labelledby="dropdownMenuLink" style="border: none !important;">
+                              <li><a class="dropdown-items" href="water.html" style="font-weight: bolder;">WATER</a></li>
+                              <li><a class="dropdown-items" href="land.html" style="font-weight: bolder;">LAND</a></li>
+                              <li><a class="dropdown-items" href="climate.html" style="font-weight: bolder;">CLIMATE</a></li>
+                              <li><a class="dropdown-items" href="market.html" style="font-weight: bolder;">MARKET</a></li>
+                              <li><a class="dropdown-items" href="fertilizer.html" style="font-weight: bolder;">FERTILIZER</a></li>
+                              <li><a class="dropdown-items" href="policy.html" style="font-weight: bolder;">POLICY</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="bg-transparent d-flex">
+                        <div class="position-relative">
+                            <input type="text"
+                                   class=" bg-white form-control rounded-pill search-bar pe-5"
+                                   placeholder="Search..."
+                                   aria-label="Search" style="border: unset;color: rgb(0, 0, 0);">
+                            <button class="bg-transparent btn position-absolute top-50 end-0 translate-middle-y" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: rgb(0, 0, 0);">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="images/Daily.jpeg" alt="" style="width: 1520px;z-index: 1;margin-top: -56px;">
+    <br>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="bg-transparent card" style="z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+          <img src="images/image_0a36a7b7ba.jpg" alt="...">
+          <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+            <h5 class="card-title" style="color: black;font-size: 14px;">Fonterra establishes milk collection and chilling centre in Hanwella</h5>
+            <br>
+            <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+              Fonterra Brands Lanka strengthened its commitment to Sri Lanka’s dairy sector with the opening of a new milk collection and chilling centre (MCC) in Hanwella. <span class="dots">...</span>
+              <span class="more" style="display:none;"><br><br>Fonterra Brands Lanka strengthened its commitment to Sri Lanka’s dairy sector with the opening of a new milk collection and chilling centre (MCC) in Hanwella. This initiative will directly support hundreds of dairy farmers by providing them with better access to milk collection facilities and support services from Fonterra Brands Lanka. By improving efficiency in milk collection and storage, Fonterra Brands Lanka ensures that more locally sourced, high-quality dairy reaches Sri Lankan households far and wide.
+                <br>
+                <br>
+                Equipped with a 3,000-litre chilling capacity and cutting-edge testing facilities, this new MCC will create greater opportunities for smallholder farmers to produce more milk, while enabling Fonterra Brands Lanka to source the highest quality milk. By investing in infrastructure, technical resources, and improved collection systems, Fonterra Brands Lanka aims to empower farmers with the tools and knowledge needed to enhance their productivity, quality, and livelihoods. This initiative aligns with the company’s long-term goal of strengthening Sri Lanka’s dairy industry through sustainable growth and local partnerships.
+                <br>
+                <br>
+                The opening ceremony was attended by Fonterra’s leadership team, the Divisional Public Health Inspector, the Provincial Secretary, regional surgeons, veterinarians, and field staff from the Department of Animal Production and Health, reflecting the collaborative effort to enhance Sri Lanka’s dairy sector.
+                <br>
+                <br>
+                As part of its ongoing mission to nurture the nation with the goodness of dairy nutrition, Fonterra remains dedicated to uplifting the farming communities that form the backbone of the industry. The Hanwella centre is yet another step towards a more resilient and a sustainable dairy sector. </span>
+            </p>
+            <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+          <img src="images/image_1048d1f482.jpg" alt="...">
+          <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+            <h5 class="card-title" style="color: black;font-size: 14px;">Effective solutions for enhancing coconut harvests from DIMO Agribusinesses</h5>
+            <br>
+            <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+              The domestic market has experienced a surge in coconut prices due to the gap between supply and demand. <span class="dots">...</span>
+              <span class="more" style="display:none;"><br><br>The domestic market has experienced a surge in coconut prices due to the gap between supply and demand. As a solution for this, Good Agricultural Practices (GAP) need to be adopted to increase the harvest efficiency in coconut cultivation fields.
+                <br>
+                <br>
+                Accordingly, maintaining spacing among plants, enabling a sufficient amount of sunlight, replacing unproductive trees with new plants, soil conservation through intercropping, pest management, balanced plant nutrition, and efficiency in water management can be considered as the factors for harvest efficiency.
+                <br>
+                <br>
+                Normally, 100-120 coconuts can be harvested annually from a healthy, well-maintained coconut tree in Sri Lanka. For such a harvest outcome, 60 L of water needs to be provided to the tree daily. Over time, when the coconut tree cannot sustain nutrition by itself and soil nutrition depletes, it needs to be outsourced as fertiliser. However, research shows that in Sri Lanka, only 30% of coconut cultivators provide fertiliser and only 10% provide water to the coconut trees. The limited application of water and fertiliser has resulted in an annual yield of 40-60 coconuts from a tree.
+                <br>
+                <br>
+                DIMO Agribusinesses, the agriculture arm of DIMO, has developed a range of solutions for enhancing coconut production from planting coconut trees to coconut harvesting.
+                <br>
+                <br>
+                The prime step for high-quality coconut production is planting high-quality coconut seedlings. DIMO Agribusinesses, a registered provider of high-quality coconut seedlings grown with state-of-the-art technology, supports cultivators with superior planting material.
+                <br>
+                <br>
+                Under the DIMO Fertiliser brand, DIMO Agribusinesses offers a range of fertiliser blends, including YPM-D, YPM-W, APM-D, APM-W, and APM-TSP. In addition to these, it has introduced a specialised fertiliser for coconut cultivation under the Grow Max brand featuring the renowned Nitrophoska compound blend.
+                <br>
+                <br>
+                In addition, DIMO Agribusinesses conducts lab testing for soil analysis to maintain the proper quality of the soil and recommends suitable fertilisers for the soil through its advisory services. It provides coconut growers with continuous knowledge of technology and educates coconut growers on the proper use of fertilisers.
+                <br>
+                <br>
+                Due to the difficulties in supplying water through orthodox methods, growers do not provide sufficient water for their crops. DIMO Agribusinesses is currently working towards popularising micro-irrigation technology through semi-automatic sub-surface drip irrigation systems in collaboration with the globally renowned Rivulis as an ideal solution in addressing water issues in coconut cultivations. As a result, they also have developed water-soluble fertiliser (Fertigation Fertiliser) mixtures that suit coconut cultivation and can be supplied through the same systems. DIMO Agribusinesses supports in consultancy on selecting the most suitable water system structure for coconut lands, the amount of fertiliser to be applied, the required fertiliser injection flow rate, the size of the tank, and whether a bypass system is required, and not only does it design and install micro-irrigation systems, but it also provides after-sales services. Accordingly, the company is always committed to general maintenance, resolving technical issues, and system improvements on behalf of the farmers.
+                <br>
+                <br>
+                Moreover, for the cost-conscious growers, DIMO Agribusinesses has introduced attractive loan facilities in collaboration with Sarvodaya Development Finance (SDF) as it contributes to increasing the productivity of coconut cultivation by offering a high return on investment (ROI).
+                <br>
+                <br>
+                DIMO has introduced a coconut estate administration service for plantation owners to manage and maintain coconut plantations. The company takes responsibility for the plantation and utilises the expertise of its experienced staff, providing recommendations and agricultural advice with complete maintenance.
+                <br>
+                <br>
+                In addition, DIMO Agribusinesses, through its modern state-of-the-art manufacturing plants, is working towards maximising the benefits of the country’s coconut production by minimising the waste that occurs during coconut consumption through producing value-added products such as virgin coconut oil, cream, coconut milk, and coconut water, to bring foreign exchange to the country through local coconut cultivation.  </span>
+            </p>
+            <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+          <img src="images/image_19c90592e5.jpg" alt="..." style="height: 286px;">
+          <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+            <h5 class="card-title" style="color: black;font-size: 14px;">Is country prepared to harvest potential dollar income through rubber industry?</h5>
+            <br>
+            <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+              Sri Lanka earned $ 930 million from the export of both raw rubber and rubber products in 2023. <span class="dots">...</span>
+              <span class="more" style="display:none;"><br><br>Sri Lanka earned $ 930 million from the export of both raw rubber and rubber products in 2023. Out of that the major share, around $ 900 million came from the export of rubber products. In the same year, Sri Lanka was able to produce only 64 million kilograms of natural rubber compelling the industries to import more than 30 million kilograms of natural rubber to the country. Foreign exchange outflow from the country for importation of the shortfall in raw rubber requirement is around $ 50 million.
+                <br>
+                <br>
+                But the country has the potential to save this foreign exchange loss from the country by becoming self-sufficient in its natural rubber requirement. Not only that, the availability of natural rubber in the country will attract more investments to the natural rubber product manufacturing sector of the country further enhancing the foreign exchange earnings and employment opportunities in the country.  </span>
+            </p>
+            <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_913428b609.jpg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">Nelna Farms opens modern Distribution Centre in Central Province</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  Nelna Farms, a leader in broiler chicken processing and further processing, recently opened a modern new Distribution Centre in Kandy.<span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>Nelna Farms, a leader in broiler chicken processing and further processing, recently opened a modern new Distribution Centre in Kandy.
+                    <br>
+                    <br>
+                    This cutting-edge facility represents a significant milestone in the company’s commitment to enhancing operational efficiency, strengthening supply chain networks, and providing superior service to its customers across the region.
+                    <br>
+                    <br>
+                    Strategically located to serve as the backbone of the company’s regional logistics network, the new Distribution Centre spans over 1700sq. ft., equipped with advanced technology and systems to optimise inventory management and streamline order processing.
+                    <br>
+                    <br>
+                    Nelna Chairman W.G.E.G. Nanayakkara said: “We are thrilled to launch our Central Province Distribution Centre. This facility underscores our dedication to meeting growing demand while maintaining our promise of delivering excellence. It not only positions us to serve our customers more effectively but also supports our vision for long-term, sustainable growth.”
+                    <br>
+                    <br>
+                    The Distribution Centre is designed with sustainability in mind, incorporating energy-efficient systems and eco-friendly practices, aligning with the company’s commitment to environmental responsibility.
+                    <br>
+                    <br>
+                    This new Distribution Centre comprises following key features such as, increased storage capacity: capable of housing a diversity inventory to ensure timely availability of products.
+                    <br>
+                    <br>
+                    “As we continue to expand, the Central Province Distribution Centre will enable us to reach new heights in customer satisfaction,” said Managing Director Asanka Nanayakkara. “We are committed to investing in infrastructures and talent to drive innovation and support the communities we serve.”
+                    <br>
+                    <br>
+                    The launch of this new Distribution Centre reinforces Mission statement of Nelna Farm Ltd., which is to remain at the forefront of Fresh Meat and Processed Meat, leveraging technology and strategic investments to deliver unmatched value. </span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_9c2d852762.jpg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">“Bank of Ceylon Paves way for drone technology in Sri Lankan agriculture” Interview with Prof. Buddhi Marambe</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  Drones have revolutionised industries worldwide, from defense to logistics, and now, in Sri Lanka, they are making a transformative impact in agriculture. <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>Drones have revolutionised industries worldwide, from defense to logistics, and now, in Sri  Lanka, they are making a transformative impact in agriculture. With the support of the Bank  of Ceylon (BOC), drone technology is being introduced to optimize agricultural operations,  improve efficiency, and support sustainability efforts.  
+                    <br>
+                    <br>
+                    Professor Buddhi Marambe, an expert in climate-smart agriculture and food systems, has  been at the forefront of these efforts. With over 38 years of experience in academia and  research at the University of Peradeniya, he has contributed significantly to climate change  adaptation strategies and innovative agricultural practices in Sri Lanka.  
+                    <br>
+                    <br>
+                    In this interview, Professor Marambe shares insights on the evolution of drone technology  in the country, highlighting the Bank of Ceylon’s critical role in funding training programs for  drone pilots, enabling large-scale implementation, and supporting research into agricultural  and environmental applications. From precision farming to conservation efforts, drones are  proving to be a game-changer, and with BOC’s support, Sri Lanka is witnessing a shift toward  technology-driven, sustainable agriculture.   </span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_9cdaa3a47a.jpg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">Browns Agri equips farmers with new TAFE tractor model Dynatrack and full-option Sumo Rice Mill</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  Browns Agriculture, a pioneer in farm mechanisation and modernisation with a legacy spanning over 150 years in Sri Lanka, has announced two groundbreaking additions to its portfolio: the new TAFE tractor model, Dynatrack, and the Browns Sumo Rice Mill.  <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>Browns Agriculture, a pioneer in farm mechanisation and modernisation with a legacy spanning over 150 years in Sri Lanka, has announced two groundbreaking additions to its portfolio: the new TAFE tractor model, Dynatrack, and the Browns Sumo Rice Mill. 
+                    <br>
+                    <br>
+                    These new cutting-edge products underscore Browns Agriculture’s commitment and vision to providing a total solution, from fertilisers to ever-evolving technology, aimed at enhancing productivity, improving quality, and meeting the growing market demand for both pre- and post-harvest requirements.
+                    <br>
+                    <br>
+                    Brown’s Cluster COO – Agriculture and Heavy Equipment Sanjaya Nissanka emphasised Browns Agriculture’s enduring legacy: “For 150 years, Browns has weathered the test of time, transforming challenges into opportunities while earning the trust of generations. As the introducers of Sri Lanka’s first-ever four-wheel tractor, the Massey Ferguson, we redefined farming practices and laid the foundation for the nation’s green revolution. Today, we continue to empower farmers with tools that drive productivity, sustainability, and economic growth.”
+                    <br>
+                    <br>
+                    The new TAFE tractor model, Dynatrack, represents a significant milestone in agricultural innovation. Equipped with a powerful Simpson engine, it combines exceptional fuel efficiency with unmatched profitability. Its advanced features, including a super-shuttle lever for seamless gear transitions and a 12x12 gear system, ensure versatility across diverse terrains.
+                    <br>
+                    <br>
+                    The tractor boasts a lifting capacity of up to two tonnes with its Dyna Lift hydraulics, supported by a high-capacity pump for efficient attachment handling. Key innovations such as the dual-diaphragm clutch system, ultra-planetary drive technology, and portal-type front axle enhance durability, while the Quadra PTO system maximises compatibility with a wide range of farming implements.
+                    <br>
+                    <br>
+                    Complementing the Dynatrack tractor, the Browns Sumo Rice Mill sets a new benchmark in rice milling technology. This IoT-integrated, automated milling machine, designed by Browns IT, enables real-time performance monitoring, maintenance scheduling, and remote alerts via a cutting-edge equipment management system accessible through laptops or mobile devices.
+                    <br>
+                    <br>
+                    Engineered to produce clean, high-quality rice that surpasses traditional standards, the full-option Sumo Rice Mill is operable by a single individual, making it an essential solution for farmers and millers looking to modernise their operations. It tracks operational records, provides pre-emptive maintenance alerts, and ensures optimal performance to extend the machine’s lifespan.
+                    <br>
+                    <br>
+                    Capable of processing up to 1,000 kg of parboiled or raw paddy per hour, the mill reduces energy consumption by 40% compared to traditional models. Its 18.5 kW polisher motor completes rice polishing in a single cycle, minimising broken rice and maximising whole grain yield. Additionally, its unique husk grinding mechanism eliminates the need for husk storage by converting it into powder, optimising storage space and operational efficiency.
+                    <br>
+                    <br>
+                    Nissanka also said: “At Browns Agriculture, our aim is to offer total solutions to the challenges faced by the farming community. We understand the complexities of modern agriculture and are dedicated to empowering farmers with innovative tools, resources, and support. We take pride in our role as a catalyst for growth, helping to build the nation by nurturing and promoting agri-entrepreneurs. Together, we are cultivating a sustainable future for agriculture, driving economic development, and enhancing food security for all.”</span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_9d7205c682.jpg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">Budget 2025 announces slew of measures to boost broader agriculture sector</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  The 2025 Budget presented by President and Finance Minister Anura Kumara Dissanayake yesterday contained a slew of measures to boost the broader agriculture sector. <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>The 2025 Budget presented by President and Finance Minister Anura Kumara Dissanayake yesterday contained a slew of measures to boost the broader agriculture sector. 
+
+                    The President said the agriculture sector provides employment to approximately 30% of the country’s labour force and is the backbone of the rural economy. Therefore, enhancing the potential of the agriculture sector is a key requirement in terms of improving economic opportunities for the vast majority of Sri Lankans. 
+                    <br>
+                    <br>
+                    In his Budget 2025 presentation, the President also said the following.
+                    <br>
+                    <br>
+                    The Government policy on agriculture sector is aimed at increasing its productivity, competitiveness, and resilience. The fertiliser subsidy for paddy farmers will be continued, for which the Government has already allocated Rs. 35 billion for 2025. The development of quality seeds, cascade management, and efficient use of water in agriculture has been identified as priority areas and are expected to be supported by the budgetary allocation.
+                    <br>
+                    <br>
+                    Maintaining a healthy buffer stock: A sufficient buffer stock starting from Maha 2024/25 is proposed to be maintained as a resilience measure to bridge the demand and supply of rice in the market while avoiding haphazard price volatility. We propose to allocate Rs. 5 billion for this purpose for Maha 2024/25.
+                    <br>
+                    <br>
+                    Information system: The agriculture sector lacks a sound data and information system for timely decision-making. Therefore, action will be taken to establish a sound data and information system covering the entire value chain, from the point of production up to the point of consumption, under the ongoing Asian Development Bank-funded “Food Security Livelihood Emergency Assistance Project” and will be expanded with the funds coming from the new World Bank project – the “Integrated Rurban Development and Climate Resilience Project.”
+                    <br>
+                    <br>
+                    Production increase of Other Field Crops (OFCs): In addition to paddy, the production of green gram, black gram, chilli, red-onion, cowpea, soya, maize, potatoes, and other selected cereals, as well as tuber crops, will be increased through an accelerated program over the medium term 2025-2027. For this purpose, we propose to allocate Rs. 500 million for 2025, in addition to the funds given for the Agriculture Ministry for 2025. 
+                    <br>
+                    <br>
+                    It is appropriate to develop a regulatory framework to regulate the collection and storage of paddy and rice stock in the market. Accordingly, it is proposed to amend the Paddy Marketing Board Act for vesting the powers with them to regulate the collection and storage of paddy and rice.   </span>
+                  </p>
+                  <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_ada963fc92.jpg" alt="..." style="height: 286px;">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">Sri Lanka hosts inaugural public-private-people forum to drive climate-smart agriculture</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  The inaugural “Catalysing Climate-Smart Agriculture: Public-Private-People” <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>The inaugural “Catalysing Climate-Smart Agriculture: Public-Private-People” forum convened recently in Colombo, bringing together key stakeholders from the private sector, Government, civil society, and international development partners to address pressing challenges in Sri Lanka’s agriculture sector through innovative climate-smart solutions.
+                    <br>
+                    <br>
+                    The forum, jointly organised by the Environment Ministry and the Food and Agriculture Organisation of the United Nations (FAO), served as a strategic platform to facilitate dialogue and collaboration aimed at overcoming barriers to private sector engagement in climate-smart agriculture. Discussions focused on policy, regulatory, and fiscal reforms, along with digital innovations, to enhance resilience, reduce emissions, and support national climate goals.
+                    <br>
+                    <br>
+                    Environment Ministry Additional Secretary Dr. R.D.S. Jayatunga, highlighted the forum’s significance and said, “This forum underscores the power of collective action in addressing one of the most urgent challenges of our time. By uniting the expertise and resources of the public, private, and community sectors, we can unlock innovative solutions to build resilience in agriculture and secure sustainable livelihoods for millions of Sri Lankans.”
+                    <br>
+                    <br>
+                    In his opening address, Assistant FAO Representative – Program Nalin Munasinghe, emphasising the importance of partnerships said, “Sri Lanka’s agriculture sector stands at a crossroads. Through collaborative efforts like this Forum, we can drive sustainable, climate-resilient growth that safeguards livelihoods and ensures food security for future generations.”
+                    <br>
+                    <br>
+                    The forum’s sessions highlighted key challenges, including the impact of climate change, such as erratic rainfall, prolonged droughts, temperature rise and pest outbreaks, which have disrupted agricultural productivity. Stakeholders at the forum validated findings of the comprehensive “Barriers Assessment” and explored actionable solutions to mobilise private sector investments. Proposed measures included tailored policy reforms, financial incentives, and enhanced coordination mechanisms to align investments with global financing opportunities and local needs.
+                    <br>
+                    <br>
+                    A collaborative roadmap for climate-smart agriculture
+                    <br>
+                    <br>
+                    One of the forum’s key outputs was the validation of an actionable roadmap designed to:
+                    <br>
+                    <br>
+                    Address barriers limiting private sector investment
+                    <br>
+                    <br>
+                    Foster public-private-community collaboration
+                    <br>
+                    <br>
+                    Leverage international climate financing
+                    <br>
+                    <br>
+                    Develop digital systems to streamline efforts and scale up best practices in climate-smart agriculture
+                    <br>
+                    <br>
+                    The roadmap also emphasised the establishment of a private sector working group to sustain momentum and ensure continued dialogue and collaboration among stakeholders.
+                    <br>
+                    <br>
+                    Global expertise and local action
+                    <br>
+                    <br>
+                    The forum featured expert presentations on the best global practices, including insights from the Climate-Smart Agriculture Investment plan. Stakeholders from academia, civil society, and the financial sector shared their perspectives, ensuring an inclusive approach to crafting solutions. 
+                    <br>
+                    <br>
+                    The outputs of the forum will inform ongoing and future initiatives to strengthen Sri Lanka’s agriculture sector, with a focus on fostering resilience, promoting sustainable practices, and achieving national climate commitments.    </span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="bg-transparent card" style=" z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_d85f52b93c.jpg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">ComBank celebrates success of pilot “Agri Modernisation Village”</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  Mahilankadu is to be the prototype for an ambitious village-by-village mission launched by the bank to propagate technology in the agriculture sector, encompassing all areas of agricultural potential in the country. <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>Mahilankadu is to be the prototype for an ambitious village-by-village mission launched by the bank to propagate technology in the agriculture sector, encompassing all areas of agricultural potential in the country.
+                    <br>
+                    <br>
+                    A team led by Commercial Bank Deputy General Manager – Personal Banking Delakshan Hettiarachchi participated in the harvest ceremony at Mahilankadu, which was also attended by Kilinochchi Government Agent S. Muralitharan, University of Jaffna Faculty of Agriculture Dean Prof. K. Pakeerathan, Central Bank Northern Region Regional Manager S. Paheerathy and Agrarian Services Asst. Commissioner B. Thewadaran. 
+                    <br>
+                    <br>
+                    Among the highlights of the event were traditional rituals to honour the spirits for the good harvest, demonstrations of some of the modern harvesting techniques introduced through the program, speeches by key stakeholders on the progress and potential of the program as a model for other regions, endorsements from farmers on how the program has positively changed their practices and incomes, and the donation of a Multi Chopping Machine to the Faculty of Agriculture of the Jaffna University for use in its community training programs.
+                    <br>
+                    <br>
+                    Commercial Bank DGM – Personal Banking Delakshan Hettiarachchi said: “Agriculture is not just an occupation in Sri Lanka, it is the heartbeat of our nation. Through innovation, unity, and determination, we can empower our farmers, uplift livelihoods, and secure a prosperous future for generations to come.” He said it is the hope of Commercial Bank that its Agri Modernisation Village program would revolutionise the agriculture sector and stimulate the next generation to embrace smart agricultural practices.
+                    <br>
+                    <br>
+                    Professor K. Pakeetharan emphasised that the adoption of modern agro-technology has significantly reduced cultivation costs. Farmers no longer need to use weedicides, and the seed paddy requirement has decreased by 75% compared to traditional methods, he said. Furthermore, he noted that weed growth in paddy fields cultivated with modern agro-technology is minimal, allowing farmers to sell their harvest as seed paddy, thereby earning a comparatively higher income. 
+                    <br>
+                    <br>
+                    The different elements to be addressed by Commercial Bank’s Agri Modernisation Village program include access to advanced techniques such as transplanting, drone application, and climate-resilient crop varieties that lead to increased productivity and profitability; skills development and training; financial inclusion and access to credit via direct engagement with the bank; improved livelihoods though better yields and access to new markets; sustainable practices that ensure the long-term viability of farmer lands; and community support and networking. Additionally, the collaboration with academic and agricultural institutions required to implement the program fosters a valuable knowledge-sharing environment.   </span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-transparent card" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+            <img src="images/image_f66a80e6ea.jpg" alt="...">
+            <div class="card-body" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+                <h5 class="card-title" style="color: black;font-size: 14px;">Planters welcomes Govt.’s move to defer removal of SVAT</h5>
+                <br>
+                <p class="card-text" style="font-size: 12px;color: black;margin-left: 0px;">
+                  While commending the move to defer the removal of SVAT, The Planters’ Association of Ceylon (PA) said that smallholders and all growers will have to forego an additional 18% off their cost of production. <span class="dots">...</span>
+                  <span class="more" style="display:none;"><br><br>While commending the move to defer the removal of SVAT, The Planters’ Association of Ceylon (PA) said that smallholders and all growers will have to forego an additional 18% off their cost of production. 
+                    <br>
+                    <br>
+                    The cumulative annual loss to the industry, is estimated at almost Rs. 24 billion. PA had noted the importance of postponing SVAT beyond April 2025 earlier, and any further extension by the Government would be a boon to the already burdened industry.
+                    <br>
+                    <br>
+                    The SVAT system has been a cornerstone of stability for Sri Lanka’s plantation sector since its introduction in 2011, ensuring financial liquidity for Regional Plantation Companies (RPCs) and safeguarding the livelihoods of smallholder tea farmers. The retention of SVAT is imperative to ensure financial fluidity, and to streamline export processes. Additionally, support for smallholders in adopting modern agricultural practices and sustainability measures is vital to maintaining global competitiveness. These steps, combined with policies to streamline export processes and enhance productivity, aim to stabilise the sector, increase export revenues, and position Sri Lanka’s tea industry for sustainable, long-term growth.
+                    <br>
+                    <br>
+                    For tea producers, the negative impact on the Colombo auction price consequent to a  discontinuation of SVAT would exacerbate existing challenges, that disrupt cash flow and hinder reinvestment. With over 90% of Sri Lanka’s tea being exported, PA highlighted that maintaining SVAT is crucial to ensuring the stability and long-term sustainability of the industry and the livelihoods it supports. </span>
+                </p>
+                <button onclick="toggleReadMore(this)" style="font-size: 12px;color: black; background: none; border: none; text-align: right;font-family: 'Montserrat';font-weight: bold;">Read More</button>
+            </div>
+          </div>
+        </div>
+    </div>
+   <br>
+   <h5 style="margin-left: 10px; color: black; font-size: 12px;margin-bottom: 0px;text-align: center;">@ DOVAC.INC</h5>
+</body>
+
+<script>
+  function toggleReadMore(button) {
+    const card = button.closest('.card-body');
+    const dots = card.querySelector('.dots');
+    const moreText = card.querySelector('.more');
+    
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      dots.style.display = "none";
+      button.innerHTML = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      dots.style.display = "inline";
+      button.innerHTML = "Read More";
+    }
+  }
+</script>
+</html>
