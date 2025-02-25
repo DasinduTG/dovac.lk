@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOVAC</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 1.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="js/node.js"></script>
+</head>
+
+<body>
+    <header class="container py-3">
+        <a href="index.html" style="z-index: 2;">
+            <img src="images/Group 1.png" class="img-fluid" alt="Logo" style="margin-left: -80px;">
+        </a>
+    </header>
+    <nav class="fn navbar navbar-expand-lg navbar" style="margin-top: -146px;margin-right: 180px;z-index: 2;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="background: black;margin-left: 930px;border-radius: 18px;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn btn-smm" href="news.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">NEWS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn btn-smm" href="issues.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">ISSUES</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn btn-smm" href="solutions.html" role="button" aria-expanded="false" style="margin-top: 2px;">SOLUTIONS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn btn-smm" href="vote.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">VOTE</a>
+                    </div>
+                </li>
+                    <div class="bg-transparent d-flex">
+                        <div class="position-relative">
+                            <input type="text"
+                                   class=" bg-white form-control rounded-pill search-bar pe-5"
+                                   placeholder="Search..."
+                                   aria-label="Search" style="border: unset;color: rgb(0, 0, 0);">
+                            <button class="bg-transparent btn position-absolute top-50 end-0 translate-middle-y" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: rgb(0, 0, 0);">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <body class="container mt-5">
+
+        <h2 class="mb-4">Survey Results</h2>
+        <canvas id="myChart"></canvas>
+    </body>
+
+    <script>
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        let name = getQueryParam("name");
+        let issue = getQueryParam("issue");
+        let vote = getQueryParam("vote");
+
+        const issuesMap = {
+            "1": "Land Disputes",
+            "2": "Climate Change",
+            "3": "Deforestation",
+            "4": "Financial Crisis"
+        };
+
+        let labels = ["Land Disputes", "Climate Change", "Deforestation", "Financial Crisis"];
+        let values = [0, 0, 0, 0];
+        values[issue - 1] = vote === "yes" ? 1 : 0;
+
+        const ctx = document.getElementById("myChart").getContext("2d");
+        new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: `${name}'s Vote`,
+                    data: values,
+                    backgroundColor: ["red", "blue", "green", "purple"],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</html>

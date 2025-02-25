@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOVAC</title>
+    <link rel="icon" type="image/x-icon" href="images/Group 1.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="js/node.js"></script>
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+</head>
+
+<body>
+    <header class="container py-3">
+        <a href="index.html" style="z-index: 2;">
+            <img src="images/Group 1.png" class="img-fluid" alt="Logo" style="margin-left: -80px;z-index: 2;">
+        </a>
+    </header>
+    <nav class="fn navbar navbar-expand-lg navbar" style="margin-top: -146px;margin-right: 180px;z-index: 2;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="background: black;margin-left: 725px;margin-right: 220px; border-radius: 18px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm" href="news.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">NEWS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm" href="issues.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">ISSUES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm" href="solutions.html" role="button" aria-expanded="false" style="margin-top: 2px;">SOLUTIONS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn btn-smm" href="vote.html" role="button" id="dropdownMenuLink" aria-expanded="false" style="margin-top: 2px;">VOTE</a>
+                        </div>
+                    </li>
+                    <div class="bg-transparent d-flex">
+                        <div class="position-relative">
+                            <input type="text"
+                                   class=" bg-white form-control rounded-pill search-bar pe-5"
+                                   placeholder="  Search..."
+                                   aria-label="Search" style="border: unset;color: rgb(0, 0, 0);">
+                            <button class="bg-transparent btn position-absolute top-50 end-0 translate-middle-y" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: rgb(0, 0, 0);">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: -60px; z-index: 1;">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="justify-content: flex-start;">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Slider1.jpeg" class="d-block w-100" alt="Slide 1" style="height: 720px;">
+                    <div class="carousel-caption d-flex justify-content-between align-items-center w-100" style="left: 5%; right: 5%;">
+                        <!-- Left Side Text -->
+                        <div class="text-start" style="max-width: 40%;">
+                            <h5 class="display-6 fw-bold text-light">
+                                AGRICULTURAL ISSUES <br> SOLUTION BASED ON VOTES
+                            </h5>
+                        </div>
+                        <!-- Centered Login Button -->
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#ModalForm" style="margin-right: 160px;margin-top: -1144px;border-radius: 50px;font-size: 12px;color: rgb(255, 255, 255);font-weight: 900;">
+                            VERIFY IDENTITY
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Slider2.jpeg" class="d-block w-100" alt="Slide 2" style="height: 720px;">
+                    <div class="carousel-caption d-flex justify-content-between align-items-center w-100" style="left: 5%; right: 5%;">
+                        <div class="text-start" style="max-width: 40%;">
+                            <h5 class="display-6 fw-bold text-light">
+                                AGRICULTURAL ISSUES <br> SOLUTION BASED ON VOTES
+                            </h5>
+                        </div>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#ModalForm" style="margin-right: 160px;margin-top: -1144px;border-radius: 50px;font-size: 12px;color: rgb(255, 255, 255);font-weight: 900;">
+                            VERIFY IDENTITY
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Slider3.jpeg" class="d-block w-100" alt="Slide 3" style="height: 720px;">
+                    <div class="carousel-caption d-flex justify-content-between align-items-center w-100" style="left: 5%; right: 5%;">
+                        <div class="text-start" style="max-width: 40%;">
+                            <h5 class="display-6 fw-bold text-light">
+                                AGRICULTURAL ISSUES <br> SOLUTION BASED ON VOTES
+                            </h5>
+                        </div>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#ModalForm" style="margin-right: 160px;margin-top: -1144px;border-radius: 50px;font-size: 12px;color: rgb(255, 255, 255);font-weight: 900;">
+                            VERIFY IDENTITY
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div class="card-group">
+        <div class="bg-transparent card fade-in-down" style="margin: 10px;border: none;z-index: 1;">
+          <img src="images/Card1.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body fade-in-down" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title zoom-in" style="color: black; font-size: 16px; text-align: center;">CLIMATE CHANGE</h5>
+            <p class="card-text zoom-in" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="animate-bounce" onclick="toggleReadMore(this)" style="cursor: pointer; text-align: right; margin-top: 10px;margin-left: 362px;border-radius: 20px;">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-transparent card fade-in-down" style="margin: 10px; border: none;z-index: 1;">
+          <img src="images/Card2.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body fade-in-down" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title zoom-in" style="color: black; font-size: 16px; text-align: center;">WATER MANAGEMENT</h5>
+            <p class="card-text zoom-in" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="animate-bounce" onclick="toggleReadMore(this)" style="cursor: pointer; text-align: right; margin-top: 10px;margin-left: 362px;border-radius: 20px;">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-transparent card fade-in-down" style="margin: 10px; border: none;z-index: 1;">
+          <img src="images/Card3.jpeg" class="card-img-top" alt="..." style="height: 280px;">
+          <div class="card-body fade-in-down" style="background-color: #F8FBFF; margin-top: -40px; margin-left: 20px;">
+            <h5 class="card-title zoom-in" style="color: black; font-size: 16px; text-align: center;">MARKET ACCESS</h5>
+            <p class="card-text zoom-in" style="margin-left: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="animate-bounce" onclick="toggleReadMore(this)" style="cursor: pointer; text-align: right; margin-top: 10px;margin-left: 362px;border-radius: 20px;">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <img src="images/bgtop.jpeg" alt="" style="opacity: 15%;width: 1520px;height: 616px;margin-top: -666px;">
+    <div class="containerr" style="margin-left: 100px;margin-top: 50px;">
+        <h5 style="color: #BB2649;z-index: 1;">BREAKING NEWS</h5>
+    </div>
+    <div class="row">
+        <div class="offset-2 col-8 offeset-2" style="margin-left: 400px;margin-top: 20px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: -60px; z-index: 1;">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators" style="justify-content: flex-start;">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Chart1.jpeg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Chart2.jpeg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Chart3.jpeg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <br>
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="myform bg-dark">
+                    <h1 class="text-center">DOVAC Verification</h1>
+                    <form>
+                        <h5 style="margin-top: 20px; margin-bottom: 10px;font-size: 18px;">Upload NIC Front</h5>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile02" style="border-bottom: none;">
+                          </div>
+                          <h5 style="margin-top: 20px; margin-bottom: 10px;font-size: 18px;">Upload NIC Back</h5>
+                          <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile02" style="border-bottom: none;">
+                          </div>
+                        <button type="submit" class="btn btn-light mt-3"><a href="approval.html" style="text-decoration: none;color: black;">Submit</a></button>                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<br>
+<br>
+<h5 style="color: #000000;z-index: 1;font-size: 18px;margin-left: 50px;">VOTING PANEL</h5>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="bg-transparent card fade-in-down" style="z-index: 1;width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+        <img src="images/image_0a36a7b7ba.jpg" alt="...">
+        <div class="card-body fade-in-down" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+          <h5 class="card-title zoom-in" style="color: black;font-size: 14px;">Fonterra establishes milk collection and chilling centre in Hanwella</h5>
+          <br>
+          <p class="card-text zoom-in" style="font-size: 12px;color: black;margin-left: 0px;">
+            Fonterra Brands Lanka strengthened its commitment to Sri Lanka’s dairy sector with the opening of a new milk collection and chilling centre (MCC) in Hanwella. <span class="dots">...</span>
+            <span class="more" style="display:none;"><br><br>Fonterra Brands Lanka strengthened its commitment to Sri Lanka’s dairy sector with the opening of a new milk collection and chilling centre (MCC) in Hanwella. This initiative will directly support hundreds of dairy farmers by providing them with better access to milk collection facilities and support services from Fonterra Brands Lanka. By improving efficiency in milk collection and storage, Fonterra Brands Lanka ensures that more locally sourced, high-quality dairy reaches Sri Lankan households far and wide.
+              <br>
+              <br>
+              Equipped with a 3,000-litre chilling capacity and cutting-edge testing facilities, this new MCC will create greater opportunities for smallholder farmers to produce more milk, while enabling Fonterra Brands Lanka to source the highest quality milk. By investing in infrastructure, technical resources, and improved collection systems, Fonterra Brands Lanka aims to empower farmers with the tools and knowledge needed to enhance their productivity, quality, and livelihoods. This initiative aligns with the company’s long-term goal of strengthening Sri Lanka’s dairy industry through sustainable growth and local partnerships.
+              <br>
+              <br>
+              The opening ceremony was attended by Fonterra’s leadership team, the Divisional Public Health Inspector, the Provincial Secretary, regional surgeons, veterinarians, and field staff from the Department of Animal Production and Health, reflecting the collaborative effort to enhance Sri Lanka’s dairy sector.
+              <br>
+              <br>
+              As part of its ongoing mission to nurture the nation with the goodness of dairy nutrition, Fonterra remains dedicated to uplifting the farming communities that form the backbone of the industry. The Hanwella centre is yet another step towards a more resilient and a sustainable dairy sector. </span>
+          </p>
+ <div class="animate-bounce" onclick="redirectToPage()" style="cursor: pointer; text-align: right; margin-top: 10px; margin-left: 362px; border-radius: 20px;">
+        <i class="fa-solid fa-person-booth" style="font-size: 24px; color: #000000;"></i>
+      </div>               
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="bg-transparent card fade-in-down" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+        <img src="images/image_1048d1f482.jpg" alt="...">
+        <div class="card-body fade-in-down" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+          <h5 class="card-title zoom-in" style="color: black;font-size: 14px;">Effective solutions for enhancing coconut harvests from DIMO Agribusinesses</h5>
+          <br>
+          <p class="card-text zoom-in" style="font-size: 12px;color: black;margin-left: 0px;">
+            The domestic market has experienced a surge in coconut prices due to the gap between supply and demand. <span class="dots">...</span>
+            <span class="more" style="display:none;"><br><br>The domestic market has experienced a surge in coconut prices due to the gap between supply and demand. As a solution for this, Good Agricultural Practices (GAP) need to be adopted to increase the harvest efficiency in coconut cultivation fields.
+              <br>
+              <br>
+              Accordingly, maintaining spacing among plants, enabling a sufficient amount of sunlight, replacing unproductive trees with new plants, soil conservation through intercropping, pest management, balanced plant nutrition, and efficiency in water management can be considered as the factors for harvest efficiency.
+              <br>
+              <br>
+              Normally, 100-120 coconuts can be harvested annually from a healthy, well-maintained coconut tree in Sri Lanka. For such a harvest outcome, 60 L of water needs to be provided to the tree daily. Over time, when the coconut tree cannot sustain nutrition by itself and soil nutrition depletes, it needs to be outsourced as fertiliser. However, research shows that in Sri Lanka, only 30% of coconut cultivators provide fertiliser and only 10% provide water to the coconut trees. The limited application of water and fertiliser has resulted in an annual yield of 40-60 coconuts from a tree.
+              <br>
+              <br>
+              DIMO Agribusinesses, the agriculture arm of DIMO, has developed a range of solutions for enhancing coconut production from planting coconut trees to coconut harvesting.
+              <br>
+              <br>
+              The prime step for high-quality coconut production is planting high-quality coconut seedlings. DIMO Agribusinesses, a registered provider of high-quality coconut seedlings grown with state-of-the-art technology, supports cultivators with superior planting material.
+              <br>
+              <br>
+              Under the DIMO Fertiliser brand, DIMO Agribusinesses offers a range of fertiliser blends, including YPM-D, YPM-W, APM-D, APM-W, and APM-TSP. In addition to these, it has introduced a specialised fertiliser for coconut cultivation under the Grow Max brand featuring the renowned Nitrophoska compound blend.
+              <br>
+              <br>
+              In addition, DIMO Agribusinesses conducts lab testing for soil analysis to maintain the proper quality of the soil and recommends suitable fertilisers for the soil through its advisory services. It provides coconut growers with continuous knowledge of technology and educates coconut growers on the proper use of fertilisers.
+              <br>
+              <br>
+              Due to the difficulties in supplying water through orthodox methods, growers do not provide sufficient water for their crops. DIMO Agribusinesses is currently working towards popularising micro-irrigation technology through semi-automatic sub-surface drip irrigation systems in collaboration with the globally renowned Rivulis as an ideal solution in addressing water issues in coconut cultivations. As a result, they also have developed water-soluble fertiliser (Fertigation Fertiliser) mixtures that suit coconut cultivation and can be supplied through the same systems. DIMO Agribusinesses supports in consultancy on selecting the most suitable water system structure for coconut lands, the amount of fertiliser to be applied, the required fertiliser injection flow rate, the size of the tank, and whether a bypass system is required, and not only does it design and install micro-irrigation systems, but it also provides after-sales services. Accordingly, the company is always committed to general maintenance, resolving technical issues, and system improvements on behalf of the farmers.
+              <br>
+              <br>
+              Moreover, for the cost-conscious growers, DIMO Agribusinesses has introduced attractive loan facilities in collaboration with Sarvodaya Development Finance (SDF) as it contributes to increasing the productivity of coconut cultivation by offering a high return on investment (ROI).
+              <br>
+              <br>
+              DIMO has introduced a coconut estate administration service for plantation owners to manage and maintain coconut plantations. The company takes responsibility for the plantation and utilises the expertise of its experienced staff, providing recommendations and agricultural advice with complete maintenance.
+              <br>
+              <br>
+              In addition, DIMO Agribusinesses, through its modern state-of-the-art manufacturing plants, is working towards maximising the benefits of the country’s coconut production by minimising the waste that occurs during coconut consumption through producing value-added products such as virgin coconut oil, cream, coconut milk, and coconut water, to bring foreign exchange to the country through local coconut cultivation.  </span>
+          </p>
+ <div class="animate-bounce" onclick="redirectToPage()" style="cursor: pointer; text-align: right; margin-top: 10px; margin-left: 362px; border-radius: 20px;">
+        <i class="fa-solid fa-person-booth" style="font-size: 24px; color: #000000;"></i>
+      </div>               
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="bg-transparent card fade-in-down" style="z-index: 1; width: 510px;margin-left: 220px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+        <img src="images/image_19c90592e5.jpg" alt="..." style="height: 286px;">
+        <div class="card-body fade-in-down" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+          <h5 class="card-title zoom-in" style="color: black;font-size: 14px;">Is country prepared to harvest potential dollar income through rubber industry?</h5>
+          <br>
+          <p class="card-text zoom-in" style="font-size: 12px;color: black;margin-left: 0px;">
+            Sri Lanka earned $ 930 million from the export of both raw rubber and rubber products in 2023. <span class="dots">...</span>
+            <span class="more" style="display:none;"><br><br>Sri Lanka earned $ 930 million from the export of both raw rubber and rubber products in 2023. Out of that the major share, around $ 900 million came from the export of rubber products. In the same year, Sri Lanka was able to produce only 64 million kilograms of natural rubber compelling the industries to import more than 30 million kilograms of natural rubber to the country. Foreign exchange outflow from the country for importation of the shortfall in raw rubber requirement is around $ 50 million.
+              <br>
+              <br>
+              But the country has the potential to save this foreign exchange loss from the country by becoming self-sufficient in its natural rubber requirement. Not only that, the availability of natural rubber in the country will attract more investments to the natural rubber product manufacturing sector of the country further enhancing the foreign exchange earnings and employment opportunities in the country.  </span>
+          </p>
+ <div class="animate-bounce" onclick="redirectToPage()" style="cursor: pointer; text-align: right; margin-top: 10px; margin-left: 362px; border-radius: 20px;">
+        <i class="fa-solid fa-person-booth" style="font-size: 24px; color: #000000;"></i>
+      </div>               
+        </div>
+      </div>
+    </div>
+      <div class="col">
+        <div class="bg-transparent card fade-in-down" style="z-index: 1; width: 510px;border: none;border-radius: none;margin-bottom: 50px;background: none;">
+          <img src="images/image_913428b609.jpg" alt="..." style="height: 286px;">
+          <div class="card-body fade-in-down" style="background-color: #F8FBFF;margin-top: -50px;margin-left: 100px;">
+              <h5 class="card-title zoom-in" style="color: black;font-size: 14px;">Nelna Farms opens modern Distribution Centre in Central Province</h5>
+              <br>
+              <p class="card-text zoom-in" style="font-size: 12px;color: black;margin-left: 0px;">
+                Nelna Farms, a leader in broiler chicken processing and further processing, recently opened a modern new Distribution Centre in Kandy.<span class="dots">...</span>
+                <span class="more" style="display:none;"><br><br>Nelna Farms, a leader in broiler chicken processing and further processing, recently opened a modern new Distribution Centre in Kandy.
+                  <br>
+                  <br>
+                  This cutting-edge facility represents a significant milestone in the company’s commitment to enhancing operational efficiency, strengthening supply chain networks, and providing superior service to its customers across the region.
+                  <br>
+                  <br>
+                  Strategically located to serve as the backbone of the company’s regional logistics network, the new Distribution Centre spans over 1700sq. ft., equipped with advanced technology and systems to optimise inventory management and streamline order processing.
+                  <br>
+                  <br>
+                  Nelna Chairman W.G.E.G. Nanayakkara said: “We are thrilled to launch our Central Province Distribution Centre. This facility underscores our dedication to meeting growing demand while maintaining our promise of delivering excellence. It not only positions us to serve our customers more effectively but also supports our vision for long-term, sustainable growth.”
+                  <br>
+                  <br>
+                  The Distribution Centre is designed with sustainability in mind, incorporating energy-efficient systems and eco-friendly practices, aligning with the company’s commitment to environmental responsibility.
+                  <br>
+                  <br>
+                  This new Distribution Centre comprises following key features such as, increased storage capacity: capable of housing a diversity inventory to ensure timely availability of products.
+                  <br>
+                  <br>
+                  “As we continue to expand, the Central Province Distribution Centre will enable us to reach new heights in customer satisfaction,” said Managing Director Asanka Nanayakkara. “We are committed to investing in infrastructures and talent to drive innovation and support the communities we serve.”
+                  <br>
+                  <br>
+                  The launch of this new Distribution Centre reinforces Mission statement of Nelna Farm Ltd., which is to remain at the forefront of Fresh Meat and Processed Meat, leveraging technology and strategic investments to deliver unmatched value. </span>
+              </p>
+     <div class="animate-bounce" onclick="redirectToPage()" style="cursor: pointer; text-align: right; margin-top: 10px; margin-left: 362px; border-radius: 20px;">
+        <i class="fa-solid fa-person-booth" style="font-size: 24px; color: #000000;"></i>
+      </div>               
+          </div>
+        </div>
+      </div>
+    </div>
+   <br>
+   <h5 style="margin-left: 10px; color: black; font-size: 12px;margin-bottom: 0px;text-align: center;">@ DOVAC.INC</h5>
+</body>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+    // Scroll-triggered fade-in animations
+    const fadeElements = document.querySelectorAll(".fade-in, .fade-in-down, .zoom-in");
+    
+    function handleScroll() {
+        fadeElements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
+                el.classList.add("visible"); // Trigger animation when element is in the viewport
+            } else {
+                el.classList.remove("visible"); // Reset when it's out of view
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll); // Add scroll event listener
+    handleScroll(); // Trigger the check once on page load
+
+    // Function to toggle "Read More / Read Less" text
+    function toggleReadMore(element) {
+        const cardBody = element.closest('.card-body');
+        const dots = cardBody.querySelector('.dots');
+        const moreText = cardBody.querySelector('.more');
+        const icon = element.querySelector('i');
+
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+            moreText.style.display = "inline";
+            dots.style.display = "none";
+            icon.classList.remove("fa-circle-arrow-down");
+            icon.classList.add("fa-circle-arrow-up");
+        } else {
+            moreText.style.display = "none";
+            dots.style.display = "inline";
+            icon.classList.remove("fa-circle-arrow-up");
+            icon.classList.add("fa-circle-arrow-down");
+        }
+    }
+
+    // Attach event listeners for the "Read More" buttons
+    document.querySelectorAll(".animate-bounce").forEach(button => {
+        button.addEventListener("click", function () {
+            toggleReadMore(this);
+        });
+    });
+
+    // Using IntersectionObserver for fade-in animations when elements come into view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing once animation has triggered
+            }
+        });
+    }, {
+        threshold: 0.1 // Animation will trigger when 10% of the element is in the viewport
+    });
+
+    // Observe all fade-in elements
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+
+    </script>
+</html>

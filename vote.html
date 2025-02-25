@@ -71,3 +71,186 @@
     <br>
     <br>
     <br>
+    <div class="container mt-5">
+        <form>
+          <!-- Personal Information Section -->
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" style="color: black;" placeholder="Enter your full name as shown in NIC" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" style="color: black;" placeholder="Enter your personal email address" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" style="color: black;" placeholder="Enter your local phone number" required>
+          </div>
+    
+          <!-- Address Section -->
+          <div class="mb-3">
+            <label for="address" class="form-label">Residential Address</label>
+            <textarea class="form-control" id="address" rows="3" style="color: black;" placeholder="Enter your permanent residential address" required></textarea>
+          </div>
+          <!-- Agriculture Code Section -->
+          <div class="mb-3">
+            <label for="agricultureCode" class="form-label" style="color: black;">Agriculture Type</label>
+            <select class="form-select" id="agricultureCode" style="color: black;" required>
+              <option value="" disabled selected>Select Agriculture Issue</option>
+              <option value="Code1">Land Disputes Due to High-Security Zones and Military Camps</option>
+              <option value="Code2">Declaration of Forest and Wildlife Reserves</option>
+              <option value="Code3">Land Grabbing by Politically or Militarily Influential Individuals</option>
+              <option value="Code4">Loss of Access to Land for Small Farmers Leading to Disrupted Livelihoods and Outmigration</option>
+              <option value="Code5">Human-Wildlife Conflict</option>
+              <option value="Code6">Conflicts Over Pastureland for Livestock</option>
+              <option value="Code7">Climate Change and Water Scarcity</option>
+              <option value="Code8">Deforestation and Land Degradation</option>
+              <option value="Code9">Unstable Crop Prices</option>
+              <option value="Code10">Cheap Imports Undermining Local Farmers</option>
+              <option value="Code11">Lack of Storage and Transport Facilities</option>
+              <option value="Code12">Mounting Farmer Debt and Financial Crisis</option>
+              <option value="Code13">Poor Policy Decision-Making</option>
+              <option value="Code14">Ineffective Land Distribution and Resettlement</option>
+              <option value="Code15">Trade and Import Policies</option>
+              <option value="Code16">Lack of Consultation with Farmers in Policy Formulation</option>
+            </select>
+          </div>
+    
+          <!-- Voting Section -->
+          <div class="mb-3">
+            <label class="form-label" style="color: black;">Place Your Vote</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" style="color: black;" name="vote" id="voteYes" value="yes" required>
+                <label class="form-check-label" style="color: black;" for="voteYes">Agree</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" style="color: black;" name="vote" id="voteNo" value="no">
+                <label class="form-check-label" style="color: black;" for="voteNo">Disagree</label>
+              </div>
+            </div>
+          </div>
+                    <div class="mb-3">
+            <label for="address" class="form-label" style="color: black;">Informative Solutions</label>
+            <textarea class="form-control" id="address" style="color: black;" rows="3" placeholder="Enter Your Message" required></textarea>
+          </div>
+          <!-- Terms and Conditions -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" style="color: black;" id="termsCheck" required>
+            <label class="form-check-label" style="color: black;" for="termsCheck">I agree to the terms and conditions</label>
+          </div>
+    
+          <!-- Submit Button -->
+          <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#ModalForm" style="margin-right: 170px;margin-left: 300px;border-radius: 50px;font-size: 12px;color: rgb(255, 255, 255);font-weight: 900;">
+            SUBMIT
+        </button>
+      </div>
+      <div class="row">
+        <div class="offset-4 col-6" style="margin-left: 830px;margin-top: -500px;width: 700px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: -60px; z-index: 1;">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators" style="justify-content: flex-start;">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/cli.jpeg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/conf.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cri.jpeg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/declaration.jpg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/def.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/dist.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/grab.png" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/hum.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/imp.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/land.jpg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/import.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/loss.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/poor.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sto.jpg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/un.png" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_0a36a7b7ba.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_1048d1f482.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_19c90592e5.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/image_913428b609.jpg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_9c2d852762.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_9cdaa3a47a.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_9d7205c682.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/image_ada963fc92.jpg" class="d-block w-100" alt="Slide 1" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_d85f52b93c.jpg" class="d-block w-100" alt="Slide 2" style="width: 1520px; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/image_f66a80e6ea.jpg" class="d-block w-100" alt="Slide 3" style="width: 1520px; height: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <p style="margin-left: 830px; margin-top: -140px;">Vote Based On These Pictures</p>
+    </div>
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="myform bg-dark">
+                    <h1 class="text-center">DOVAC</h1>
+                    <form>
+                        <h5 style="margin-top: 20px; margin-bottom: 10px;font-size: 18px;">Thank You for voting. <br><br> Please wait until the chart and graph is displayed on your screen.</h5>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <br>
+</body>
+</html>
